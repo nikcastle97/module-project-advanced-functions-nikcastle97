@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Adv Functions Guided Project</h1>
+
+  <script>
+    // console.log(`Hello World!`)
+
+    // Challenge 1
+    let squareNumsA = (nums) => {
+      let result = []
+      for (let idx in nums) {
+        if (nums[idx] === 13) {
+          return `13 freaks me out!`
+        }
+        result.push(nums[idx] ** 2)
+      }
+      return result
+    }
+    // console.log(squareNumsA([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))
+
+    // Challenge 2
+    let squareNumsB = nums => {
+      let result = []
+      nums.forEach(num => {
+        result.push(num ** 2)
+      })
+      return result
+    }
+    // console.log(squareNumsB([1, 2, 3, 4, 5]))
+
+    // Challenge 3
+    let squareNumsC = nums => {
+      let squared = nums.map(num => {
+        return num ** 2
+      })
+      return squared
+    }
+    // console.log(squareNumsC([1, 2, 3, 4, 5, 6, 7]))
+
+    // Challenge 4
+    let findJSArticles = articles => {
+      let filtered = articles.filter(article => {
+        return `${console.log(`${article.topic === `JS`}`)}`
+      })
+      return filtered
+    }
+    // console.log(findJSArticles([{ topic: 'JS' }, { topic: 'React' }, { topic: 'Node' }]))
+
+    // Chaaallenge 5
+    let concatWords = (...words) => {
+      return words.join(` `)
+    }
+    // console.log(`${concatWords(`Let`, `Me`, `Help`, `You!`)}`)
+  </script>
+</body>
+</html>
